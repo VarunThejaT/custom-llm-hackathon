@@ -1,11 +1,11 @@
 import replicate
 
 training = replicate.trainings.create(
-  version="a16z-infra/llama-2-7b-chat:058333670f2a6e88cf1b29b8183405b17bb997767282f790b82137df8c090c1f",
+  version="a16z-infra/llama-2-7b-chat:7b0bfc9aff140d5b75bacbed23e91fd3c34b01a1e958d32132de6e0a19796e2c",
   input={
-    "train_data": "https://storage.googleapis.com/dan-scratch-public/fine-tuning/70k_samples.jsonl",
+    "train_data": "https://raw.githubusercontent.com/VarunThejaT/custom-llm-hackathon/master/replicate_sample.jsonl",
   },
-  destination="varuntheja/npctest"
+  destination="varunthejat/npctest"
 )
 
 print(training)

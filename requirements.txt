@@ -1,2 +1,4 @@
 together
 replicate
+requests
+beautifulsoup4
